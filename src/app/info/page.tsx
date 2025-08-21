@@ -51,7 +51,7 @@ export default function HackwaveInfoPage() {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   return (
-    <div className="min-h-screen bg-[#141414] text-[#fcf2e8] pb-20 px-6">
+    <div className="min-h-screen max-w-7xl mx-auto bg-[#141414] text-[#fcf2e8] pb-20 px-6">
       <div
         ref={containerRef}
         className="text-center h-screen flex flex-col items-center justify-center mb-10 md:mb-16"

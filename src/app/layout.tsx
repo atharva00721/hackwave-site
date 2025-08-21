@@ -130,7 +130,7 @@ export default function RootLayout({
           href="/favicon_io/android-chrome-512x512.png"
         />
       </head>
-      <body className={`antialiased ${hostGrotesk.className}`}>
+      <body className={`antialiased ${hostGrotesk.className} bg-[#141414]`}>
         <LenisProvider>
           <Navbar />
           {children}

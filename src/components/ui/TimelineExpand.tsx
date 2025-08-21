@@ -106,15 +106,17 @@ export default function TimelineExpand({
                 >
                   <div className="max-w-4xl mx-auto space-y-4 pb-4">
                     {day.events.map((event, eventIndex) => {
-                      // Extract time and description from event string
-                      const [timePart, ...descParts] = event.split(" — ");
-                      const description = descParts.join(" — ");
-
-                      // Extract only the starting time (before the dash or "AM"/"PM")
-                      const startTime = timePart
-                        .split("–")[0]
-                        .split("-")[0]
-                        .trim();
+                      // Extract time label (start or start–end) and description
+                      const parts = event.split(" — ").map((p) => p.trim());
+                      let timeLabel = parts[0] ?? "";
+                      let description = parts.slice(1).join(" — ");
+                      if (
+                        parts.length >= 3 &&
+                        /\b(?:AM|PM)\b/i.test(parts[1])
+                      ) {
+                        timeLabel = `${parts[0]} — ${parts[1]}`;
+                        description = parts.slice(2).join(" — ");
+                      }
 
                       return (
                         <div
@@ -125,7 +127,7 @@ export default function TimelineExpand({
                             className="text-[#141414] font-bold px-3 py-1 rounded-lg text-sm text-center flex-shrink-0"
                             style={{ backgroundColor: day.color }}
                           >
-                            {startTime}
+                            {timeLabel}
                           </div>
                           <div className="text-lg font-bold text-left flex-1">
                             {description}
