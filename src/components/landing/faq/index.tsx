@@ -170,6 +170,76 @@ const FAQSection = () => {
         </span>
       ),
     },
+    {
+      question: "Is there a registration fee?",
+      answer:
+        "Registration is free. However, if you are selected, you will need to pay ₹500 for final confirmation.",
+    },
+    {
+      question: "Do I need prior coding experience?",
+      answer:
+        "Not necessarily. Hackathons require a mix of skills such as problem-solving, design, presentation, and development. Beginners are welcome.",
+    },
+    {
+      question:
+        "Do I need to be an expert in AI or sustainability to participate?",
+      answer: "No, you don't. All you need is enthusiasm to learn and build.",
+    },
+    {
+      question: "What happens after Round 1 if we get selected?",
+      answer:
+        "If you clear Round 1, you will receive an official selection email along with next steps. This will include details about your assigned team (if applicable), problem statements, and guidelines for the final round. You'll also be added to exclusive communication channels for real-time updates.",
+    },
+    {
+      question: "Do we have to build a complete project during the hackathon?",
+      answer:
+        "A functional prototype is sufficient. It should clearly demonstrate your concept and potential impact.",
+    },
+    {
+      question: "Can we work on our project before the hackathon?",
+      answer:
+        "No, all development must happen during the official hackathon hours to ensure fairness.",
+    },
+    {
+      question: "What should I bring?",
+      answer:
+        "Bring your laptop, charger, extension board, and any specific tools or hardware you'll need.",
+    },
+    {
+      question: "Are there prizes?",
+      answer:
+        "Yes! Winners will receive cash prizes, goodies, and potential internship opportunities.",
+    },
+    {
+      question: "Will all participants get certificates?",
+      answer:
+        "Yes, every participant will receive an official participation certificate.",
+    },
+    {
+      question: "Will food and accommodation be provided?",
+      answer:
+        "Yes, meals and basic accommodation will be arranged for all offline participants.",
+    },
+
+    {
+      question: "Will there be internet access?",
+      answer: "Yes, Wi-Fi will be available at the venue.",
+    },
+    {
+      question: "How will I receive updates?",
+      answer:
+        "Updates will be shared via email, WhatsApp groups, and official announcement channels.",
+    },
+    {
+      question: "Will there be any travel allowance provided?",
+      answer:
+        "No, we will not be providing travel reimbursements. Participants are expected to arrange and cover their own travel expenses.",
+    },
+    {
+      question: "Can we change our team members after Round 1?",
+      answer:
+        "No, team compositions will be locked after Round 1 to ensure fairness and smooth coordination.",
+    },
   ];
 
   return (

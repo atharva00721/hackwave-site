@@ -17,6 +17,16 @@ const SPONSORS: Sponsor[] = [
     logoSrc: "/sponsors/hotwax.png",
     url: "https://www.hotwaxsystems.com/",
   },
+  {
+    name: "Shekunj Foundation",
+    logoSrc: "/sponsors/shekunj.png",
+    url: "https://shekunj.com/",
+  },
+  {
+    name: "HDFC Bank",
+    logoSrc: "/sponsors/images.png",
+    url: "https://www.hdfcbank.com/",
+  },
   // Add more sponsors by appending items to this array
 ];
 
@@ -68,7 +78,7 @@ export default function SponsorsSection() {
           ))}
 
           {/* Placeholder card to keep grid balanced when adding future sponsors */}
-          {SPONSORS.length === 2 && (
+          {SPONSORS.length === 4 && (
             <div className="hidden lg:flex items-center justify-center rounded-xl border border-dashed border-[rgb(60,60,60)] h-40 sm:h-48 text-[#ccc]">
               More coming soon
             </div>

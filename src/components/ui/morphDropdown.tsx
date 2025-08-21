@@ -35,7 +35,7 @@ export const PillMenu: FC = () => {
     // Enhanced animation sequence with pulling down effect
     timelineRef.current
       .to(containerRef.current, {
-        height: "460px", // Back to original height since Join Now is only in menu on mobile
+        height: "520px", // Dynamic height based on content
         width: "14rem", // w-56 equivalent
         duration: 0.6,
         ease: "power3.out",
@@ -107,7 +107,7 @@ export const PillMenu: FC = () => {
         {/* Container with consistent design system */}
         <div
           ref={containerRef}
-          className="h-14 w-12 md:w-40 overflow-hidden rounded-2xl bg-[#141414] will-change-[height,border-radius] border border-[#333]"
+          className="h-14 w-12 md:w-40 rounded-2xl bg-[#141414] will-change-[height,border-radius] border border-[#333]"
         >
           <div className="px-2 py-1">
             {/* Enhanced trigger with Join Now button and hamburger menu */}
@@ -226,6 +226,23 @@ export const PillMenu: FC = () => {
                     <span className="font-black text-base">Team</span>
                     <span className="font-medium text-sm text-[#ccc]">
                       Meet the organizers
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="/judges"
+                  className="menu-item translate-y-4 text-[#fcf2e8] flex items-center gap-3 p-3 rounded-xl hover:bg-[#222] transition-colors duration-200 group"
+                  style={{
+                    opacity: getItemOpacity(2),
+                    transform: isOpen ? "translateY(0)" : "translateY(16px)",
+                  }}
+                >
+                  <div className="flex flex-col">
+                    <span className="font-black text-base">
+                      Judges & Mentors
+                    </span>
+                    <span className="font-medium text-sm text-[#ccc]">
+                      Meet the judges and mentors
                     </span>
                   </div>
                 </a>

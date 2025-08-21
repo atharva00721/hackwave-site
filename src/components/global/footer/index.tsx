@@ -10,6 +10,7 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "Timeline", href: "/timeline" },
   { name: "Team", href: "/team" },
+  { name: "Judges & Mentors", href: "/judges" },
   {
     name: "Register",
     href: "https://unstop.com/o/szmvO5g?lb=2CqWo19U&utm_medium=Share&utm_source=shortUrl",
@@ -23,6 +24,7 @@ export default function Footer() {
     "hover:bg-[#f9ffa5]",
     "hover:bg-[#feaac0]",
     "hover:bg-[#dcd0fe]",
+    "hover:bg-[#feaac0]",
   ];
 
   // For nav link refs
@@ -150,7 +152,7 @@ export default function Footer() {
         </div>
         {/* Copyright */}
         <div className="w-full text-center text-[#666] text-xs mt-8">
-          &copy; {new Date().getFullYear()} Hackwave. All rights reserved.
+          &copy; 2025 Hackwave. All rights reserved.
         </div>
       </div>
     </div>
