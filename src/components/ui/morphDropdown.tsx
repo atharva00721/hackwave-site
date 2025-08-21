@@ -230,7 +230,7 @@ export const PillMenu: FC = () => {
                   </div>
                 </a>
                 <a
-                  href="/judges"
+                  href="/info"
                   className="menu-item translate-y-4 text-[#fcf2e8] flex items-center gap-3 p-3 rounded-xl hover:bg-[#222] transition-colors duration-200 group"
                   style={{
                     opacity: getItemOpacity(2),
@@ -238,11 +238,9 @@ export const PillMenu: FC = () => {
                   }}
                 >
                   <div className="flex flex-col">
-                    <span className="font-black text-base">
-                      Judges & Mentors
-                    </span>
+                    <span className="font-black text-base">Information</span>
                     <span className="font-medium text-sm text-[#ccc]">
-                      Meet the judges and mentors
+                      All Info About The Event
                     </span>
                   </div>
                 </a>
